@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fab fa-facebook"></i>
+                <h1>Send Request</h1>
+            </div>
+            <div class="menu-item active" data-target="dashboard">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="menu-item" data-target="friends">
+                <i class="fas fa-user-friends"></i>
+                <span>Friends</span>
+            </div>
+            <div class="menu-item" data-target="requests">
+                <i class="fas fa-user-plus"></i>
+                <span>Friend Requests</span>
+            </div>
+            <div class="menu-item" data-target="messages">
+                <i class="fas fa-comment-dots"></i>
+                <span>Messages</span>
+            </div>
+            <div class="menu-item" data-target="notifications">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search and Send Request">
+                </div>
+                <div class="user-actions">
+                    <div class="profile">
+                        <img src="My profile pic.jpg" alt="Profile">
+                        <span>Umar Bey</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Tabs -->
+            <div class="content-tabs">
+                <div class="tab active" data-tab="all-users">All Users</div>
+                <div class="tab" data-tab="sent-requests">Sent Requests</div>
+                <div class="tab" data-tab="received-requests">Received Requests</div>
+            </div>
+            
+            <!-- Dashboard Content -->
+            <div class="content-section active" id="dashboard">
+                <div class="content-area">
+                    <h2 class="section-title">People You May Know</h2>
+                    <div class="users-grid" id="users-grid">
+                        <!-- User cards will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Friends Content -->
+            <div class="content-section" id="friends">
+                <div class="content-area">
+                    <h2 class="section-title">Your Friends</h2>
+                    <div class="users-grid" id="friends-grid">
+                        <!-- Friends will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Requests Content -->
+            <div class="content-section" id="requests">
+                <div class="content-area">
+                    <h2 class="section-title">Friend Requests</h2>
+                    
+                    <!-- Received Requests -->
+                    <h3 style="margin: 20px 0 15px; color: #1c1e21;">Received Requests</h3>
+                    <div class="requests-list" id="received-requests-list">
+                        <!-- Received requests will be populated by JavaScript -->
+                    </div>
+                    
+                    <!-- Sent Requests -->
+                    <h3 style="margin: 30px 0 15px; color: #1c1e21;">Sent Requests</h3>
+                    <div class="requests-list" id="sent-requests-list">
+                        <!-- Sent requests will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Messages Content -->
+            <div class="content-section" id="messages">
+                <div class="content-area">
+                    <h2 class="section-title">Messages</h2>
+                    <div class="empty-state">
+                        <i class="fas fa-comment-dots"></i>
+                        <h3>Your messages will appear here</h3>
+                        <p>Send and receive messages from your friends</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Notifications Content -->
+            <div class="content-section" id="notifications">
+                <div class="content-area">
+                    <h2 class="section-title">Notifications</h2>
+                    <div class="empty-state">
+                        <i class="fas fa-bell"></i>
+                        <h3>No new notifications</h3>
+                        <p>When you have notifications, they'll appear here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
